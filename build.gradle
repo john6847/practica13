@@ -79,6 +79,10 @@ dependencies {
     compile 'org.webjars:jquery:3.2.1'
     compile 'org.webjars:bootstrap:3.3.7'
     profile "org.grails.profiles:web:3.1.5"
+    compile 'org.webjars:AdminLTE:2.4.0'
+    // https://mvnrepository.com/artifact/org.webjars/startbootstrap-sb-admin-2
+    compile group: 'org.webjars', name: 'startbootstrap-sb-admin-2', version: '3.3.7+1'
+    compile 'org.grails.plugins:grails-google-visualization:2.2'
 
 }
 

@@ -33,20 +33,30 @@
         Nombre
     </th>
     <th>
-        Acciones
+        Usuarios
     </th>
     </thead>
     <tbody>
-    <g:each in="${categorias}" var="categoria">
+    <g:each in="${departamentos}" var="departamento">
         <tr>
-            <td>${categoria.id}</td>
-            <td>${categoria.nombre}</td>
+            <td>${departamento.id}</td>
+            <td>${departamento.nombre}</td>
+            <td>
+            <div style="padding:1%" class="col-sm-10">
+            <select style="background-color: #bbbdff" name="SeleccionarUsuarios"  id="SeleccionarUsuarios"  class="selectpicker form-control" multiple>
+            <g:each in="${usuarios}" var="us">
+            <option value="${us.id}">${us.username}</option>
+
+            </g:each>
+            </select>
+            </div>
+            </div>
+            </td>
         </tr>
     </g:each>
     </tbody>
-
 </table>
-<g:link action="crearNuevoUsuario" controller="categoria" ><button type="button" id="crearCategoria" class="btn btn-success">Crear Categoria</button></g:link>
+<g:link action="crearNuevoDepartamento" controller="departamento" ><button type="button" id="crearDepartamento" class="btn btn-success btn-block">Crear Categoria</button></g:link>
 
 </body>
 

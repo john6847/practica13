@@ -26,16 +26,16 @@
 <!-- Horizontal Form -->
 <div class="box box-info">
     <div class="box-header with-border">
-        <h3 class="box-title">Crear Categoria</h3>
+        <h3 class="box-title">Crear Departamento</h3>
     </div><!-- /.box-header -->
 <!-- form start -->
-    <g:form action="crearNuevaCategoria">
+    <g:form action="crearNuevoDepartamento">
         <div class="box-body">
 
             <div style="margin-top:5%" class="form-group">
-                <label class="col-sm-2 control-label">Nombre Categoria</label>
+                <label class="col-sm-2 control-label">Nombre Departamento</label>
                 <div class="col-sm-10">
-                    <input style="border: 1px solid cornflowerblue;" type="text" name="nombreCategoria" class="form-control" id="inputName" placeholder="nombre de la categoria">
+                    <input style="border: 1px solid cornflowerblue;" type="text" name="nombreDepartamento" class="form-control" id="inputName" placeholder="nombre del departamento">
                 </div>
             </div>
 

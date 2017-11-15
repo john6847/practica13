@@ -6,6 +6,7 @@ class Categoria {
 
     Date dateCreated
     Date lastUpdated
+    boolean enabled = true
 
 //    int last_user
 

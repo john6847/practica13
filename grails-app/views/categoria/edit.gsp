@@ -1,40 +1,43 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
-    <head>
-        <meta name="layout" content="main" />
-        <g:set var="entityName" value="${message(code: 'categoria.label', default: 'Categoria')}" />
-        <title><g:message code="default.edit.label" args="[entityName]" /></title>
-    </head>
-    <body>
-        <a href="#edit-categoria" class="skip" tabindex="-1"><g:message code="default.link.skip.label" default="Skip to content&hellip;"/></a>
-        <div class="nav" role="navigation">
-            <ul>
-                <li><a class="home" href="${createLink(uri: '/')}"><g:message code="default.home.label"/></a></li>
-                <li><g:link class="list" action="index"><g:message code="default.list.label" args="[entityName]" /></g:link></li>
-                <li><g:link class="create" action="create"><g:message code="default.new.label" args="[entityName]" /></g:link></li>
-            </ul>
-        </div>
-        <div id="edit-categoria" class="content scaffold-edit" role="main">
-            <h1><g:message code="default.edit.label" args="[entityName]" /></h1>
-            <g:if test="${flash.message}">
-            <div class="message" role="status">${flash.message}</div>
-            </g:if>
-            <g:hasErrors bean="${this.categoria}">
-            <ul class="errors" role="alert">
-                <g:eachError bean="${this.categoria}" var="error">
-                <li <g:if test="${error in org.springframework.validation.FieldError}">data-field-id="${error.field}"</g:if>><g:message error="${error}"/></li>
-                </g:eachError>
-            </ul>
-            </g:hasErrors>
-            <g:form resource="${this.categoria}" method="PUT">
-                <g:hiddenField name="version" value="${this.categoria?.version}" />
-                <fieldset class="form">
-                    <f:all bean="categoria"/>
-                </fieldset>
-                <fieldset class="buttons">
-                    <input class="save" type="submit" value="${message(code: 'default.button.update.label', default: 'Update')}" />
-                </fieldset>
-            </g:form>
-        </div>
-    </body>
+<head>
+    <meta name="layout" content="main"/>
+    <title>Bienvenido...</title>
+
+    <link rel="stylesheet " type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.2/css/bootstrap-select.min.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
+    %{--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>--}%
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.2/js/bootstrap-select.min.js"></script>
+    <asset:link rel="icon" href="favicon.ico" type="image/x-ico" />
+
+</head>
+<body>
+
+<!-- Horizontal Form -->
+<div class="box box-info">
+    <div class="box-header with-border">
+        <h3 class="box-title">Editar Categoria</h3>
+    </div><!-- /.box-header -->
+<!-- form start -->
+    <g:form action="editCategoria">
+        <div class="box-body">
+            <div style="margin-bottom:5%" class="form-group">
+                <label for="inputEmail3" class="col-sm-2 control-label">Nombre Categoria</label>
+                <div class="col-sm-10">
+                    <input value="${categoria.nombre}" style="border: 1px solid cornflowerblue;" type="text" name="nombreCategoria" class="form-control" id="inputEmail3">
+                </div>
+            </div>
+
+        </div><!-- /.box-body -->
+        <div class="box-footer">
+            <button type="submit" class="btn btn-danger">Cancel</button>
+            <button type="submit" class="btn btn-info pull-right">Crear</button>
+        </div><!-- /.box-footer -->
+    </g:form>
+
+</div><!-- /.box -->
+
+</body>
 </html>

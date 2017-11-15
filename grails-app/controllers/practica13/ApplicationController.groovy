@@ -1,8 +1,10 @@
 package practica13
 
+
 class ApplicationController {
 
     def index() {
-        render(view:"/index")
+        println("entro al index....")
+        render(view: "/index", model: [])
     }
 }

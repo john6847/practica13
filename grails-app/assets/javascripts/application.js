@@ -9,15 +9,13 @@
 //= require bootstrap
 //= require_tree .
 //= require_self
-//= require bootstrap
-//= require exa-datatables-bootstrap3
 
 if (typeof jQuery !== 'undefined') {
     (function($) {
-        $('#spinner').ajaxStart(function() {
-            $(this).fadeIn();
+        $(document).ajaxStart(function() {
+            $('#spinner').fadeIn();
         }).ajaxStop(function() {
-            $(this).fadeOut();
+            $('#spinner').fadeOut();
         });
     })(jQuery);
 }

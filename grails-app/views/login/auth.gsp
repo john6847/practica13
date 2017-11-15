@@ -73,8 +73,7 @@
     <div class="wrapper">
 
     <div class="login-box-body">
-        <h3 class="form-signin-heading">Favor entrar su nombre de usuario y contrasena</h3>
-            <hr class="colorgraph"><br>
+        <h3 class="form-signin-heading">Login</h3>
 
         <g:if test='${flash.message}'>
             <div class="login_message">${flash.message}</div>
