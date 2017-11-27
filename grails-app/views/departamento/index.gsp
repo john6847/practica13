@@ -45,7 +45,7 @@
             <div style="padding:1%" class="col-sm-10">
             <select style="background-color: #bbbdff" name="SeleccionarUsuarios"  id="SeleccionarUsuarios"  class="selectpicker form-control" multiple>
             <g:each in="${usuarios}" var="us">
-            <option value="${us.id}">${us.username}</option>
+            <option value="${us.id}">${us.nombre}</option>
 
             </g:each>
             </select>

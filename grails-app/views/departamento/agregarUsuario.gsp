@@ -36,17 +36,17 @@
                 <label style="padding:1%" class="col-sm-2 control-label">Departamento</label>
                 <div style="padding:1%" class="col-sm-10">
                     <select style="background-color: #bbbdff" name="SeleccionarDepartamento"  id="SeleccionarDepartamento"  class="selectpicker form-control">
-                        <g:each in="${usuarios}" var="us">
-                            <option value="${us.id}">${us.username}</option>
+                        <g:each in="${departamentos}" var="dep">
+                            <option value="${dep.id}">${dep.nombre}</option>
 
                         </g:each>
                     </select>
 
-                    <label style="padding:1%" class="col-sm-2 control-label">Usuario</label>
+                    <label style="padding:1%" class="col-sm-2 control-label">Contacto</label>
                     <div style="padding:1%" class="col-sm-10">
                         <select style="background-color: #bbbdff" name="SeleccionarUsuario"  id="SeleccionarUsuario"  class="selectpicker form-control">
-                            <g:each in="${departamentos}" var="dep">
-                                <option value="${dep.id}">${dep.nombre}</option>
+                            <g:each in="${usuarios}" var="us">
+                                <option value="${us.id}">${us.nombre}</option>
 
                             </g:each>
                         </select>

@@ -83,6 +83,9 @@ dependencies {
     // https://mvnrepository.com/artifact/org.webjars/startbootstrap-sb-admin-2
     compile group: 'org.webjars', name: 'startbootstrap-sb-admin-2', version: '3.3.7+1'
     compile 'org.grails.plugins:grails-google-visualization:2.2'
+    // https://mvnrepository.com/artifact/nz.ac.waikato.cms.weka/weka-stable
+    compile group: 'nz.ac.waikato.cms.weka', name: 'weka-stable', version: '3.8.0'
+
 
 }
 
