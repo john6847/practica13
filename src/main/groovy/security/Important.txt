@@ -1,0 +1,47 @@
+[5:10 PM, 10/26/2017] ManuelTolentino: ssh waterquality@45.55.149.151 acceso al servidor
+[5:10 PM, 10/26/2017] ManuelTolentino: y la clave es waterquality1234
+
+
+
+$2a$10$BAs95Ef0Q44i7E3OYHubdOLsMlnRdrlfgrbp27T5yy6t4.Ov9YgHG
+
+$2a$10$fMHRoue2Lx7pxTs5Uff.l.U.AMrkpQSsZ6pHRoTCMwXguqhoxkL0m
+
+$2a$10$CT2jxL4W4ZqOO9DcRZkGd.8B5r5aeIEDoEaFBZ5SbkafjHNJIWAjO
+
+$2a$10$fMHRoue2Lx7pxTs5Uff.l.U.AMrkpQSsZ6pHRoTCMwXguqhoxkL0m
+
+
+[3:53 PM, 10/30/2017] ManuelTolentino: Oks lo primero que debes hacer el tumbar el servicio
+[3:53 PM, 10/30/2017] ManuelTolentino: Con un comando llamado grep que no me ño se entero pero ta em el historial cuando entras al servidor
+[3:53 PM, 10/30/2017] ManuelTolentino: Haces control R y escribe grep y te van a salir los procesos
+[3:54 PM, 10/30/2017] ManuelTolentino: Entonces buscas el proceso del jar y haces kill -9 numeroproceso
+[3:54 PM, 10/30/2017] ManuelTolentino: Luego haces cd waterquality
+[3:54 PM, 10/30/2017] ManuelTolentino: Y haces git pull
+[3:54 PM, 10/30/2017] ManuelTolentino: Y luego que baje to
+[3:54 PM, 10/30/2017] ManuelTolentino: Haces ./grailsw dev war
+[3:55 PM, 10/30/2017] ManuelTolentino: Tamo subiendo la versiom dev
+[3:55 PM, 10/30/2017] ManuelTolentino: Luego que genere el war
+[3:55 PM, 10/30/2017] ManuelTolentino: Vas a build/libs
+[3:55 PM, 10/30/2017] ManuelTolentino: Y ahi va estar el war
+[3:55 PM, 10/30/2017] ManuelTolentino: Debes identicar cual es pero si haces el control r y escribes java -jar te va salir el comando con el jar ya
+[3:56 PM, 10/30/2017] ManuelTolentino: Asegurate que el error y la salida digan dev.txt
+[3:56 PM, 10/30/2017] ManuelTolentino: Y luego ya pa ver la salida de la consola tail -f saliva_dev.txt
+[3:57 PM, 10/30/2017] ManuelTolentino: Y pa salir sal con exit de la consola no cerrandola
+[3:57 PM, 10/30/2017] ManuelTolentino: Pq si la cierras la tumba la.app
+
+
+Se ha recorrido una muestra no potable.
+
+
+
+
+
+
+
+
+
+Mostrar los datos
+Validar lo de volver atras
+Notificacion de usuario
+Editar.
